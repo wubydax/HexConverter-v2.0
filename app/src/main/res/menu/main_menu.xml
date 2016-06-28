@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Select image"
+        android:id="@+id/imageMenu"
+        android:icon="@drawable/ic_image"
+        android:showAsAction="always"/>
+    <item
+        android:title="Crop image"
+        android:id="@+id/cropMenu"
+        android:icon="@drawable/ic_crop"
+        android:showAsAction="always"/>
+
+</menu>

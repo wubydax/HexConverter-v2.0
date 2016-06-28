@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+//def keystorePropertiesFile = rootProject.file("wubydax_key.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+//    signingConfigs {
+//        gearSigningConfig {
+//            keyAlias keystoreProperties['keyAlias']
+//            keyPassword keystoreProperties['keyPassword']
+//            storeFile file(keystoreProperties['storeFile'])
+//            storePassword keystoreProperties['storePassword']
+//        }
+//    }
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.wubydax.hexconverter"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.gearSigningConfig
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

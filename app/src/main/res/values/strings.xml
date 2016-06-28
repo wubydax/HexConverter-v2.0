@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hex Converter</string>
+    <string name="press_color_to_apply">Press to apply</string>
+    <string name="dialog_color_picker">Choose color</string>
+    <string name="select_color_picker">Select color picker:</string>
+    <string name="hex_color">Hex color: %1$s</string>
+    <string name="color_integer">Color integer: %1$s</string>
+    <string name="smali_integer">Smali integer: %1$s</string>
+    <string name="select_color">Select color</string>
+    <string name="color_selector_image_view">Color selector image view</string>
+
+    <string-array name="spinner_values">
+        <item>Color picker dialog</item>
+        <item>Select color from Image</item>
+    </string-array>
+</resources>

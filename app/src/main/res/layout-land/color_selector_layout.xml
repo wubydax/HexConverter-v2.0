@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="horizontal"
+              android:weightSum="2">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/dialogLaunchButton"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_button_bg"
+            android:padding="10dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:text="@string/select_color"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <include
+            layout="@layout/color_values_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+
+</LinearLayout>
